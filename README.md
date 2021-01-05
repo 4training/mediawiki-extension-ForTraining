@@ -9,8 +9,8 @@ A JavaScript part (based on JQuery) is found in the resources/ subdirectory and 
 interaction with this menu item: When a user clicks on it, this script sends a POST request
 to the handler URL configured in $wgForTrainingGenerateOdtUrl. It sends the following
 parameters with it:
-	`worksheet` (in the form of `page/languagecode`)
-	`user` (the user name requesting the ODT generator; receives an email afterwards)
+* `worksheet` (in the form of `page/languagecode`)
+* `user` (the user name requesting the ODT generator; receives an email afterwards)
 
 The actual work is found in a python repository with the CGI handler script and the script
 doing the actual work.
@@ -19,12 +19,14 @@ doing the actual work.
 Copy the extension files into `mediawiki/extensions/`
 
 With git:
-	`git clone https://github.com/4training/mediawiki-extension-ForTraining.git /PATH/TO/mediawiki/extensions/ForTraining`
+    `git clone https://github.com/4training/mediawiki-extension-ForTraining.git /PATH/TO/mediawiki/extensions/ForTraining`
 
 Add the following lines to `LocalSettings.php`:
-	`wfLoadExtension('ForTraining');
-	# Configure handler URL for the generate ODT tool
-	$wgForTrainingGenerateOdtUrl = 'https://www.example.org/cgi-bin/generateodt.py';`
+```php
+wfLoadExtension('ForTraining');
+# Configure handler URL for the generate ODT tool
+$wgForTrainingGenerateOdtUrl = 'https://www.example.org/cgi-bin/generateodt.py';
+```
 
 # See also
 This extension is based on the BoilerPlate template for mediawiki extension development:
