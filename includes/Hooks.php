@@ -64,7 +64,9 @@ class Hooks {
 				'Prayer', 'Forgiving Step by Step', 'Confessing Sins and Repenting', 'Time with God', 'Hearing from God',
 				'Family and our Relationship with God', 'Worksheet for the Book of Acts',
 				'Training Meeting Outline', 'Overcoming Fear and Anger', 'Getting Rid of Colored Lenses',
-				'Church', 'Healing', 'My Story with God', 'Bible Reading Bookmark (Seven Stories full of Hope)');	// Only enable the function for these worksheets (temporary, TODO)*/
+				'Church', 'Healing', 'My Story with God', 'Bible Reading Bookmark (Seven Stories full of Hope)',
+				'Bible Reading Bookmark', 'Bible Reading Bookmark (Starting with the Creation)', 'A Daily Prayer',
+				'The Role of a Helper in Prayer');	// Only enable the function for these worksheets (temporary, TODO)*/
 			if (!in_array($worksheet, $allowed))
 				return true;
 				
